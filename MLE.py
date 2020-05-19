@@ -198,7 +198,7 @@ for i in range(len(x_proj_peak_ind)):
 #        r = (np.abs(counts - hist_gaus_fit)-0.5)**2 #for small count rates (less then 5 ions per tof). It is so called Yates's correction
         r = (counts - hist_gaus_fit)**2 #for normal count rates
         chisq = np.sum(r/counts)/(len(counts)-1)
-        title='$\chi^2$= '+str(chisq) +'\n$ \mu$='+str(mu_MLE)+'$\pm$'+str(stderr_mu_MLE)+'\n$ \sigma$='+str(sig_MLE)+'$\pm$'+str(stderr_sig_MLE)
+        title='$\chi^2$= '+str(round(chisq,3)) +'\n$ \mu$='+str(round(mu_MLE,3))+'$\pm$'+str(round(stderr_mu_MLE,3))+'\n$ \sigma$='+str(round(sig_MLE,3))+'$\pm$'+str(round(stderr_sig_MLE,3))
         ax3.set_title(title)
         ax3.legend()
         a=mu_MLE

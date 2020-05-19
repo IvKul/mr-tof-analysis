@@ -195,7 +195,7 @@ for i in range(len(x_proj_peak_ind)):
         d=stderr_sigma_gaus
         e=chisq
         ax3.legend()
-        title='$\chi^2$= '+str(chisq) +'\n$ \mu$='+str(a)+'$\pm$'+str(b)+'\n$ \sigma$='+str(c)+'$\pm$'+str(d)
+        title='$\chi^2$= '+str(round(chisq,3)) +'\n$ \mu$='+str(round(a,3))+'$\pm$'+str(round(b,3))+'\n$ \sigma$='+str(round(c,3))+'$\pm$'+str(round(d,3))
         ax3.set_title(title)
         a_list.append(a)
         b_list.append(b)
